@@ -234,7 +234,7 @@ TerminalThemesAddon::RunPreferencesPanel()
 
 	// and fake the menu item click
 	BMessage command('MPre');
-	command.AddSpecifier("Window", 0L);
+	command.AddSpecifier("Window", (int32)0);
 
 	BMessenger msgr(kHaikuTerminalAppSig);
 	err = msgr.SendMessage(&command);
